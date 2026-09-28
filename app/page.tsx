@@ -345,23 +345,23 @@ export default function Portfolio() {
               Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!
             </p>
             
-            <form className="max-w-md mx-auto space-y-4 mb-12 text-left">
-              <div>
-                <label htmlFor="name" className="sr-only">Name</label>
-                <input id="name" type="text" placeholder="Your Name" required className="w-full px-5 py-4 bg-[#0a0a0a] border border-white/10 rounded-xl text-white focus:outline-none focus:border-violet-500 transition-colors placeholder:text-zinc-600" />
-              </div>
-              <div>
-                <label htmlFor="email" className="sr-only">Email</label>
-                <input id="email" type="email" placeholder="Your Email" required className="w-full px-5 py-4 bg-[#0a0a0a] border border-white/10 rounded-xl text-white focus:outline-none focus:border-violet-500 transition-colors placeholder:text-zinc-600" />
-              </div>
-              <div>
-                <label htmlFor="message" className="sr-only">Message</label>
-                <textarea id="message" rows={4} placeholder="Your Message" required className="w-full px-5 py-4 bg-[#0a0a0a] border border-white/10 rounded-xl text-white focus:outline-none focus:border-violet-500 transition-colors placeholder:text-zinc-600 resize-none" />
-              </div>
-              <button type="submit" className="w-full py-4 bg-white text-black hover:bg-zinc-200 rounded-xl font-bold transition-colors">
-                Send Message
-              </button>
-            </form>
+<form action="https://formspree.io/f/mrpbrqpo" method="POST" className="max-w-md mx-auto space-y-4 mb-12 text-left">
+  <div>
+    <label htmlFor="name" className="sr-only">Name</label>
+    <input id="name" name="name" type="text" placeholder="Your Name" required className="w-full px-5 py-4 bg-[#0a0a0a] border border-white/10 rounded-xl text-white focus:outline-none focus:border-violet-500 transition-colors placeholder:text-zinc-600" />
+  </div>
+  <div>
+    <label htmlFor="email" className="sr-only">Email</label>
+    <input id="email" name="email" type="email" placeholder="Your Email" required className="w-full px-5 py-4 bg-[#0a0a0a] border border-white/10 rounded-xl text-white focus:outline-none focus:border-violet-500 transition-colors placeholder:text-zinc-600" />
+  </div>
+  <div>
+    <label htmlFor="message" className="sr-only">Message</label>
+    <textarea id="message" name="message" rows={4} placeholder="Your Message" required className="w-full px-5 py-4 bg-[#0a0a0a] border border-white/10 rounded-xl text-white focus:outline-none focus:border-violet-500 transition-colors placeholder:text-zinc-600 resize-none" />
+  </div>
+  <button type="submit" className="w-full py-4 bg-white text-black hover:bg-zinc-200 rounded-xl font-bold transition-colors">
+    Send Message
+  </button>
+</form>
 
             <div className="flex justify-center items-center gap-6">
               <a href={`mailto:${personalInfo.email}`} className="p-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all hover:scale-110 text-zinc-300 hover:text-white" aria-label="Email">
